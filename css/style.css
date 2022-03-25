@@ -1,0 +1,35 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.header {
+    background-color: #4682B4;
+    color: #fff;
+}
+
+.header .itens {
+    width: 35px;
+    height: 35px;
+    background-color: #87CEEB;
+    line-height: 35px;
+    text-align: center;
+    color: #444;
+    font-size: 12px;
+    border-radius: 50%;
+    float: right;
+}
+
+.menu {
+    font-size: 12px;
+    text-align: center;
+}
+
+.lista .bloco {
+    background-color: antiquewhite;
+}
+
+.lista .listItem {
+    text-align: center;   
+}
