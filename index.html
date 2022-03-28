@@ -1,3 +1,11 @@
+<!-- 
+
+    Página Inicial
+
+    traz os itens do carrinho
+
+-->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -22,48 +30,99 @@
 </head>
 <body>
 
-    <div class=" header columns">
+    <button class="cc-bg-primary btnModal" data-modal="modal-slideinleft-fs" role="button">"SlideInLeft & Fullscreen" modal</button>
+
+    <div class="header columns">
 
         <div class="cc-4-s">
-            <i class="fa-solid fa-store"></i> COMPRAS
+            <i class="fa-solid fa-store"></i>
         </div>
 
-        <div class="cc-4-s" style="text-align: center;">
-            R$ 34,00
+        <div class="cc-4-s headercarrinho" style="text-align: center;">
+            <span class="valor-carrinho c-red"> <i class="fa fa-dollar"></i> <span class="badge"> R$ 34,00 </span> </span> 
+            <!-- span class="valor-para-acrescentar"> + R$ 7,00 </span> -->
         </div>
 
         <div class="cc-4-s">
 
             <div class="itens">
-                <i class="fa fa-cart-shopping"></i> 1
+                <i class="fa fa-cart-shopping"></i> 1 
             </div>
-            
         </div>
 
     </div> <!-- header -->
 
     <div class="menu columns">
-        <div class="cc-3-s">
-            Minha lista
-        </div>
-        <div class="cc-3-s">
-            Estoque
-        </div>
-        <div class="cc-3-s">
-            Carteira
-        </div>
-        <div class="cc-3-s cc-bg-green">
-            Novo
-        </div>
+
+        <ul class="cc-12-s cc-horizontal menu-open-mobile">
+            <li>
+                <a href="#">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </li>
+        </ul>
+        
+
+        <ul class="cc-horizontal menu-principal">
+
+            <li>
+
+                <a href="#">
+
+                    <div class="cc-3-s">
+                        Minha lista
+                    </div>
+        
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#">
+
+                    <div class="cc-3-s">
+                        Estoque
+                    </div>
+        
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#">
+
+                    <div class="cc-3-s">
+                        Carteira
+                    </div>
+        
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#">
+
+                    <div class="cc-3-s cc-bg-green">
+                        Novo
+                    </div>
+        
+                </a>
+
+            </li>
+
+        </ul>
+
+
     </div>
 
-    <div class="lista columns">
+    <div class="lista">
 
         <div class="columns bloco">
-            <div class="cc-12-s cc-bg-primary">
-                Caixa com 12
-            </div>
-            <div class="listItem columns">
+            
+            <div class="listItem listHeader columns">
                 <div class="cc-4-s">
                     Item
                 </div>
@@ -71,29 +130,92 @@
                     Qtd
                 </div>
                 <div class="cc-4-s">
+                    Valor unit.
+                </div>
+                <div class="cc-4-s">
                 </div>
             </div>
-            <div class="cc 12-s">
+        </div>
+
+        <div class="columns bloco">
+            <div class="cc-12-s columns">
 
                 <div class="listItem columns">
                     <div class="cc-4-s">
                         Banana
                     </div>
-                    <div class="cc-4-s">
-                        1
+                    <div class="cc-4-s columns">
+                        <div class="btn-group">
+                        <a href="#" class="btn cc-thin cc-bg-primary">+</a>
+                        <span class="number-qtd"> 1 </span>
+                        <a href="#" class="btn cc-thin cc-bg-primary">-</a>
+                    </div>
                     </div>
                     <div class="cc-4-s">
-                        <a href="#" class="btn cc-thin cc-bg-primary">+</a>
-                        <a href="#" class="btn cc-thin cc-bg-primary">-</a>
+                        R$ 2.50,00
+                    </div>
+                    <div class="cc-4-s">
+                        
+                        
                     </div>
                 </div>
 
             </div>
         </div> <!-- Bloco -->
 
-        
+        <div class="columns bloco">
+            <div class="cc-12-s columns">
+
+                <div class="listItem columns">
+                    <div class="cc-4-s">
+                        Banana
+                    </div>
+                    <div class="cc-4-s columns">
+                        <div class="btn-group">
+                        <a href="#" class="btn cc-thin cc-bg-primary">+</a>
+                        <span class="number-qtd"> 1 </span>
+                        <a href="#" class="btn cc-thin cc-bg-primary">-</a>
+                    </div>
+                    </div>
+                    <div class="cc-4-s">
+                        R$ 2.50,00
+                    </div>
+                    <div class="cc-4-s">
+                        
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div> <!-- Bloco -->
+
+        <div class="columns total-carrinho">
+            R$ 2.50,00
+        </div>
 
     </div>
+
+    <!-- SLIDE IN LEFT EXEMPLE COMBINED WITH FULLSCREEN & FIXED HEADER & FOOTER -->
+<div id="modal-slideinleft-fs" class="modal" data-open="slideInLeft" data-fixed-hf data-fullscreen>
+    <button data-close-modal></button>
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+        <div class="modal-header">
+            Atenção
+        </div>
+        <section class="wrap-modal-body">
+            <div class="modal-body">
+                <p>
+                    Você precisa acrescentar mais R$ 7,00 
+                </p>
+                <button class="cc-bg-primary"> Acrescentar Agora </button>
+            </div>
+        </section>
+        <div class="modal-footer cc-txt-center">
+            <a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close</a>
+        </div>
+    </div>
+</div>
 
     <script
     src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -101,6 +223,12 @@
     crossorigin="anonymous"></script>
 
 <script src="js/chuckcss.js"></script>
+
+<script>
+    $(function() {
+        //$('.btnModal').click()
+    })
+</script>
     
 </body>
 </html>

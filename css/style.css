@@ -1,24 +1,76 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    font-size: 12px;
+    font-size: 20px;
+}
+
+a {
+    display: block;
+}
+
+.menu-open-mobile {
+    display: none;
+    background-color: #007539;
+}
+
+.c-red {
+    color: #79060c;
+}
+
+.cc-3-s, .cc-4-s, .cc-12-s {
+    padding: 5px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background-color: #3a3a3a !important;
+    border-color: #3a3a3a !important;
+    outline: none;
+}
+
+.btnModal {
+    display: none;
 }
 
 .header {
-    background-color: #4682B4;
+    background-color: #007539;
     color: #fff;
 }
 
 .header .itens {
     width: 35px;
     height: 35px;
-    background-color: #87CEEB;
+    background-color: #fff;
     line-height: 35px;
     text-align: center;
     color: #444;
     font-size: 12px;
     border-radius: 50%;
     float: right;
+}
+
+.header .headercarrinho {
+    border-radius: 20px;
+    margin: 5px 0;
+}
+
+.header .valor-carrinho {
+    font-size: 16px;
+    display: block;
+}
+
+.header .valor-carrinho .fa.fa-cart-shopping {
+    font-size: 13px;
+    color: #fff;
+    display: block;
+}
+
+.header .valor-para-acrescentar {
+    font-size: 13px;
+    color: #444;
+    display: block;
 }
 
 .menu {
@@ -30,6 +82,71 @@ body {
     background-color: antiquewhite;
 }
 
+.lista .bloco .listHeader {
+    background-color: #3a3a3a;
+    font: 12px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .lista .listItem {
-    text-align: center;   
+    text-align: center; 
+    font-size: 12px;  
+    color: #444;
+}
+
+.lista .listItem .number-qtd {
+    text-align: center; 
+    font-size: 14px;  
+    color: #444;
+    padding: 10px;
+    display: block;
+}
+
+.lista .listItem .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista .listItem .btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+div.total-carrinho {
+    background-color: #007539;
+    text-align: center;
+    font-size: 1em;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 700px) {
+    .menu-open-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .menu-open-mobile {
+        display: block;
+    }
+
+    .menu-principal {
+        display: none;
+    }
+
 }
