@@ -34,6 +34,12 @@ a {
     display: none;
 }
 
+.sombreamento {
+    box-shadow: 0px 4px 0px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 4px 0px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 0px -3px rgba(0,0,0,0.75);
+}
+
 .header {
     background-color: #007539;
     color: #fff;
@@ -131,6 +137,17 @@ div.total-carrinho {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.content-lista {
+    background-color: rgb(192, 121, 27);
+    margin: 2%;
+}
+
+.content-lista .listaheader {
+    font-size: 14px;
+    color: #fff;
+    text-shadow: none;
 }
 
 @media (min-width: 700px) {
