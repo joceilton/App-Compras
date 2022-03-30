@@ -150,6 +150,40 @@ div.total-carrinho {
     text-shadow: none;
 }
 
+/* Estoque */
+.bloco_estoque {
+    background-color: #eee;
+    font-size: 14px;
+    color: #444;
+}
+
+.bloco_estoque p {
+    padding-bottom: 5px;
+}
+
+.bloco_estoque .bloco_item {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px #ddd solid;
+}
+
+.bloco_estoque .bloco_item h1 {
+    font-size: large;
+    font-weight: bold;
+    color: rgb(14, 12, 12);
+}
+
+.bloco_estoque .itemDetalhes {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    padding: 5px;
+}
+
 @media (min-width: 700px) {
     .menu-open-mobile {
         display: none;
